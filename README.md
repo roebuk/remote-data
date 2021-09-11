@@ -22,30 +22,30 @@ Via a script tag https://unpkg.com/@roebuk/remote-data
 #### Basic Example
 
 ```js
-    import * as RemoteData from '@roebuk/remote-data';
+import * as RemoteData from '@roebuk/remote-data';
 
-    // Set the initial state
-    var remoteUsers = RemoteData.NotAsked();
+// Set the initial state
+var remoteUsers = RemoteData.NotAsked();
 
-    // An interaction starts off the request
-    remoteUsers = RemoteData.Loading()
+// An interaction starts off the request
+remoteUsers = RemoteData.Loading()
 
-    // Once the request is complete,
-    // it will either be in a `Success` or `Failure` state.
-    remoteUsers = await fetch('/api/users')
-                            .then(res => res.json())
-                            .then(users => RemoteData.Success(users))
-                            .catch(err => RemoteData.Failure(err))
+// Once the request is complete,
+// it will either be in a `Success` or `Failure` state.
+remoteUsers = await fetch('/api/users')
+                        .then(res => res.json())
+                        .then(users => RemoteData.Success(users))
+                        .catch(err => RemoteData.Failure(err))
 
 
-    // "Pattern match" on the RemoteData type and extract the current state. 
-    // The return value of the functions should all be of the same type.
-    RemoteData.match({
-        notAsked: () => 'Not Requested the data'
-        loading: () => 'Loading...'
-        success: users => `Loaded ${users.length} users`,
-        failed: err => `Something when wrong. Details: ${err.message}`
-    }, remoteUsers)
+// "Pattern match" on the RemoteData type and extract the current state. 
+// The return value of the functions should all be of the same type.
+RemoteData.match({
+    notAsked: () => 'Not Requested the data'
+    loading: () => 'Loading...'
+    success: users => `Loaded ${users.length} users`,
+    failed: err => `Something when wrong. Details: ${err.message}`
+}, remoteUsers)
 ```
 
 
