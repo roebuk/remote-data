@@ -1,0 +1,8 @@
+.eslintrc.js
+src/**
+.nyc_output/**
+coverage/**
+docs/**
+tsconfig.json
+.github/**
+CHANGELOG.md

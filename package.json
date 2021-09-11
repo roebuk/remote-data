@@ -1,0 +1,54 @@
+{
+  "name": "remote-data",
+  "version": "0.0.1",
+  "description": "Remote Data",
+  "source": "./src/remote-data.ts", 
+  "exports": "./dist/remote-data.modern.js",
+  "main": "./dist/remote-data.cjs",
+  "module": "./dist/remote-data.module.js",
+  "unpkg": "./dist/remote-data.umd.js",  
+  "types": "./dist/remote-data.d.ts",
+  "author": "Kristian Roebuck",
+  "license": "MIT",
+  "sideEffects": false,
+  "scripts": {
+    "prettier": "./node_modules/.bin/prettier ./src/** --write",
+    "lint": "eslint ./src",
+    "start": "microbundle --watch",
+    "build": "microbundle",
+    "test": "ava",
+    "docs": "typedoc --out docs ./src",
+    "test:cov": "nyc --reporter lcov ava"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.31.0",
+    "@typescript-eslint/parser": "^4.31.0",
+    "ava": "^3.15.0",
+    "eslint": "^7.32.0",
+    "microbundle": "^0.13.3",
+    "nyc": "^15.1.0",
+    "prettier": "^2.4.0",
+    "ts-node": "^10.2.1",
+    "typedoc": "^0.22.2",
+    "typescript": "^4.4.3"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": true,
+    "arrowParens": "avoid",
+    "endOfLine": "lf"
+  },
+  "ava": {
+    "extensions": {
+      "ts": "module"
+    },
+    "nonSemVerExperiments": {
+      "configurableModuleFormat": true
+    },
+    "nodeArguments": [
+      "--loader=ts-node/esm"
+    ]
+  }
+}
