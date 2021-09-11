@@ -1,5 +1,5 @@
 {
-  "name": "remote-data",
+  "name": "@roebuk/remote-data",
   "version": "0.0.1",
   "description": "Remote Data",
   "source": "./src/remote-data.ts", 
