@@ -2,6 +2,10 @@
 
 [![Build](https://github.com/roebuk/remote-data/actions/workflows/node.js.yml/badge.svg)](https://github.com/roebuk/remote-data/actions/workflows/node.js.yml)
 
+![David](https://img.shields.io/david/roebuk/remote-data)
+
+![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/@roebuk/remote-data)
+
 
 Tools for fetching data from remote sources (incl. HTTP). For a full discussion
 of what this package does and why it exists, [read this post](http://blog.jenkster.com/2016/06/how-elm-slays-a-ui-antipattern.html).
@@ -12,7 +16,7 @@ of what this package does and why it exists, [read this post](http://blog.jenkst
 From your top-level directory - the one with `package.json` in - call:
 
 ```
-$ npm install roebuk/remote-data
+$ npm install @roebuk/remote-data
 ```
 
 ## Documentation
