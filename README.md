@@ -12,6 +12,7 @@ of why Remote Data helps, [read this post](http://blog.jenkster.com/2016/06/how-
 ```
 $ npm install @roebuk/remote-data
 ```
+----
 
 Via a script tag https://unpkg.com/@roebuk/remote-data
 
@@ -28,14 +29,14 @@ import * as RemoteData from '@roebuk/remote-data';
 var remoteUsers = RemoteData.NotAsked();
 
 // An interaction starts off the request
-remoteUsers = RemoteData.Loading()
+remoteUsers = RemoteData.Loading();
 
 // Once the request is complete,
 // it will either be in a `Success` or `Failure` state.
 remoteUsers = await fetch('/api/users')
                         .then(res => res.json())
                         .then(users => RemoteData.Success(users))
-                        .catch(err => RemoteData.Failure(err))
+                        .catch(err => RemoteData.Failure(err));
 
 
 // "Pattern match" on the RemoteData type and extract the current state. 
@@ -45,9 +46,12 @@ RemoteData.match({
     loading: () => 'Loading...'
     success: users => `Loaded ${users.length} users`,
     failed: err => `Something when wrong. Details: ${err.message}`
-}, remoteUsers)
+}, remoteUsers);
 ```
 
+#### React Example
+
+[React & Remote Data on StackBlitz](https://stackblitz.com/edit/react-ts-mexbfh?file=index.tsx)
 
 ## Building & Testing
 
