@@ -1,10 +1,6 @@
 # Remote Data
 
-[![Build](https://github.com/roebuk/remote-data/actions/workflows/node.js.yml/badge.svg)](https://github.com/roebuk/remote-data/actions/workflows/node.js.yml)
-
-![David](https://img.shields.io/david/roebuk/remote-data)
-
-![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/@roebuk/remote-data)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/roebuk/remote-data/Node.js%20CI) ![David](https://img.shields.io/david/roebuk/remote-data) ![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/@roebuk/remote-data)
 
 
 Tools for fetching data from remote sources (incl. HTTP). For a full discussion
