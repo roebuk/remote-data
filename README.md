@@ -3,7 +3,7 @@
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/roebuk/remote-data/Node.js%20CI) ![David](https://img.shields.io/david/roebuk/remote-data) ![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/@roebuk/remote-data)
 
 
-Tools for fetching data from remote sources (incl. HTTP). For a detailed write up
+Tiny (less than 400 bytes) tools for fetching data from remote sources (incl. HTTP). For a detailed write up
 of why Remote Data helps, [read this post](http://blog.jenkster.com/2016/06/how-elm-slays-a-ui-antipattern.html).
 
 

@@ -11,6 +11,20 @@
   "author": "Kristian Roebuck",
   "license": "MIT",
   "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roebuk/remote-data.git"
+  },
+  "tags": [
+    "typescript",
+    "remote data",
+    "fetching data"
+  ],
+  "keywords": [
+    "typescript",
+    "remote data",
+    "fetching data"
+  ],
   "scripts": {
     "prettier": "./node_modules/.bin/prettier ./src/** --write",
     "lint": "eslint ./src",
