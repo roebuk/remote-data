@@ -1,6 +1,6 @@
 # Remote Data
 
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/roebuk/remote-data/Node.js%20CI) ![David](https://img.shields.io/david/roebuk/remote-data) ![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/@roebuk/remote-data)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/roebuk/remote-data/Node.js%20CI) ![David](https://img.shields.io/david/roebuk/remote-data) ![npm bundle size (scoped)](https://img.badgesize.io/https:/unpkg.com/@roebuk/remote-data@0.0.1/dist/remote-data.umd.js?label=brotli&compression=brotli)
 
 
 Tiny (less than 400 bytes) tools for fetching data from remote sources (incl. HTTP). For a detailed write up
