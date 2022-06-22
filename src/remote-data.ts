@@ -104,7 +104,7 @@ function NotAsked<E, T>(): RemoteData<E, T> {
  * ```
  * @returns Wether or not the RemoteData is in a successful state.
  */
-function isSuccess<E, T>(rd: RemoteData<E, T>): boolean {
+function isSuccess<E, T>(rd: RemoteData<E, T>): rd is Success<T> {
   return rd.type === RDType.Success;
 }
 
@@ -117,7 +117,7 @@ function isSuccess<E, T>(rd: RemoteData<E, T>): boolean {
  * ```
  * @returns Wether or not the RemoteData is in a Failed state.
  */
-function isFailure<E, T>(rd: RemoteData<E, T>): boolean {
+function isFailure<E, T>(rd: RemoteData<E, T>): rd is Failed<E> {
   return rd.type === RDType.Failed;
 }
 
@@ -130,7 +130,7 @@ function isFailure<E, T>(rd: RemoteData<E, T>): boolean {
  * ```
  * @returns Wether or not the RemoteData is in a Loading state.
  */
-function isLoading<E, T>(rd: RemoteData<E, T>): boolean {
+function isLoading<E, T>(rd: RemoteData<E, T>): rd is Loading {
   return rd.type === RDType.Loading;
 }
 
@@ -143,7 +143,7 @@ function isLoading<E, T>(rd: RemoteData<E, T>): boolean {
  * ```
  * @returns Wether or not the RemoteData is in a NotAsked state.
  */
-function isNotAsked<E, T>(rd: RemoteData<E, T>): boolean {
+function isNotAsked<E, T>(rd: RemoteData<E, T>): rd is NotAsked {
   return rd.type === RDType.NotAsked;
 }
 

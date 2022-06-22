@@ -2,11 +2,11 @@
   "name": "@roebuk/remote-data",
   "version": "0.0.2",
   "description": "Remote Data",
-  "source": "./src/remote-data.ts", 
+  "source": "./src/remote-data.ts",
   "exports": "./dist/remote-data.modern.js",
   "main": "./dist/remote-data.cjs",
   "module": "./dist/remote-data.module.js",
-  "unpkg": "./dist/remote-data.umd.js",  
+  "unpkg": "./dist/remote-data.umd.js",
   "types": "./dist/remote-data.d.ts",
   "author": "Kristian Roebuck",
   "license": "MIT",
@@ -35,11 +35,11 @@
     "test:cov": "nyc --reporter lcov ava"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.31.0",
-    "@typescript-eslint/parser": "^4.31.0",
-    "ava": "^3.15.0",
-    "eslint": "^7.32.0",
-    "microbundle": "^0.13.3",
+    "@typescript-eslint/eslint-plugin": "^5.29.0",
+    "@typescript-eslint/parser": "^5.29.0",
+    "ava": "^4.3.0",
+    "eslint": "^8.18.0",
+    "microbundle": "^0.15.0",
     "nyc": "^15.1.0",
     "prettier": "^2.4.0",
     "ts-node": "^10.2.1",
@@ -57,9 +57,6 @@
   "ava": {
     "extensions": {
       "ts": "module"
-    },
-    "nonSemVerExperiments": {
-      "configurableModuleFormat": true
     },
     "nodeArguments": [
       "--loader=ts-node/esm"

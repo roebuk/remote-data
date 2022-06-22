@@ -9,12 +9,24 @@ of why Remote Data helps, [read this post](http://blog.jenkster.com/2016/06/how-
 
 ## Installation
 
+#### NPM
+
 ```
 $ npm install @roebuk/remote-data
 ```
-----
 
-Via a script tag https://unpkg.com/@roebuk/remote-data
+#### ES Modules
+
+```html
+<script type="module">
+  import RemoteData from 'https://cdn.skypack.dev/@roebuk/remote-data';
+</script>
+```
+
+#### Script Tag
+```html
+<script src="https://unpkg.com/@roebuk/remote-data"></script>
+```
 
 ## Documentation
 
